@@ -1,0 +1,2 @@
+C:\Users\MS SocialNUI\Documents\Repos\Scratch\UWP\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\MS SocialNUI\Documents\Repos\Scratch\UWP\Scratch\Scratch.csproj;x86

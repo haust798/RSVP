@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityWSASolutionName>Scratch</UnityWSASolutionName>
+        <UnityWSASolutionDir>C:\Users\MS SocialNUI\Documents\Repos\Scratch\UWP\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\MS SocialNUI\Documents\Repos\Scratch\</UnityProjectDir>
+        <UnityWSAPlayerDir>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
+    </PropertyGroup>
+</Project>
