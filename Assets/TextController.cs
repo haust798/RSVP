@@ -50,10 +50,9 @@ public class TextController : MonoBehaviour
         if (word.IndexOf("\r\n") > 0)
             word = word.Remove(word.IndexOf("\r\n"), 2);
         int index = get_colored_letter_index(word);
-        AnimateVertexColors(index);
-        get_richTextBox_location(index);
         
-        UnityEngine.Debug.Log(word);
+        get_richTextBox_location(index);
+        AnimateVertexColors(index);
     }
 
     private void get_richTextBox_location(int index)
@@ -62,7 +61,7 @@ public class TextController : MonoBehaviour
         float X_next = textMeshDisplay.textInfo.characterInfo[index].topRight.x;
         float distanceBefore = X - textMeshDisplay.textInfo.characterInfo[0].topLeft.x;
         float letter_width = (X_next - X) / 2.0f;
-        GetComponent<RectTransform>().anchoredPosition = new Vector3(-0.05f-(distanceBefore + letter_width) * 0.005f, 0f, -0.01f);
+        GetComponent<RectTransform>().anchoredPosition = new Vector3(-0.049f-(distanceBefore + letter_width) * 0.005f, -0.017f, -0.01f);
     }
 
     private string[] ReadString()
