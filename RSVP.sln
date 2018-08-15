@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSVP", "Assembly-CSharp.csproj", "{924C121B-3720-27A7-DFA9-F3AB4A834121}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{924C121B-3720-27A7-DFA9-F3AB4A834121}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSVP", "Assembly-CSharp-Editor.csproj", "{C64B058B-5CB4-5AFD-4E51-293B5DE61092}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{C64B058B-5CB4-5AFD-4E51-293B5DE61092}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
