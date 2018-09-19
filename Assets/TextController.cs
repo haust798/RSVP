@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 
@@ -19,6 +20,9 @@ public class TextController : MonoBehaviour
     private float waitTime = 0;
     private float timer = 0f;
     private Stopwatch stopwatch;
+    
+    char[] full_stop = { '.', '!', '?' };
+    char[] half_stop = { ',', ':', ';', '-' };
 
     void Start()
     {
@@ -37,8 +41,16 @@ public class TextController : MonoBehaviour
             CancelInvoke();
         textMeshDisplay.text = book_text[word_index];
         update_text(textMeshDisplay.text);
+        
         if (stopwatch.ElapsedMilliseconds > waitTime)
         {
+            if (book_text[word_index].IndexOfAny(full_stop) != -1)
+            {
+                System.Threading.Thread.Sleep((int)waitTime*2);
+            } else if (book_text[word_index].IndexOfAny(half_stop) != -1)
+            {
+                System.Threading.Thread.Sleep((int)(waitTime * 1.2));
+            }
             word_index++;
             stopwatch.Reset();
             stopwatch.Start();
